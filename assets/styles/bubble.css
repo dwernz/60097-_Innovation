@@ -273,7 +273,7 @@
 }
 
 .overlay {
-    position: absolute;
+    position: relative;
     min-width: 80%;
     margin: 10%;
     background: rgba(0, 0, 0, 0.2);
