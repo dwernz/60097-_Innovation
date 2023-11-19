@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    border-box: box-shadow;
 }
 
 .bubble-container {
@@ -304,24 +304,16 @@
 .text {
     color: rgba(255, 255, 255, 0.7);
     margin: 0;
-    padding: 0;
+    padding: 5px 20px;
     text-shadow: rgba(255, 255, 255, 1) 1px 0 5px;
+    text-align: center;
 }
 
 .team-number {
-    margin-top: 30px;
-}
-
-.team-name {
-    margin-top: 15px;
-}
-
-.header {
-    margin-top: 10px;
+    margin-top: 45px;
 }
 
 .description {
-    margin-top: 20px;
     padding: 20px;
     font-size: 20px;
     text-align: justify;
