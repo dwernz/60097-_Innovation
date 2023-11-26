@@ -334,8 +334,31 @@
     border-radius: 8px;
 }
 
+.image:hover {
+    box-shadow: 0 0 40px 25px #00beef;
+    animation: glow 5s linear infinite;
+}
+
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 40px 25px #00beef;
+    }
+    25% {
+        box-shadow: 0 0 40px 25px #ef00be;
+    }
+    50% {
+        box-shadow: 0 0 40px 25px #00ef31;
+    }
+    75% {
+        box-shadow: 0 0 40px 25px #ef3100;
+    }
+    100% {
+        box-shadow: 0 0 40px 25px #00beef;
+    }
+}
+
 button {
-    margin: 15px;
+    margin: 25px;
     height: 35px;
     width: 35px;
     border-radius: 8px;
