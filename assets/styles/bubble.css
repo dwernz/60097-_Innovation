@@ -374,3 +374,10 @@ button:hover {
     background: white;
     color: #2222ff;
 }
+
+@media (max-width: 768px) {
+    .overlay {
+        width: 100vw;
+        margin: 0 auto; 
+    }
+}
