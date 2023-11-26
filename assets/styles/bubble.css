@@ -324,8 +324,30 @@
     justify-content: center;
     align-items: center;
     width: 80%;
+    margin: 50px;
 }
 
 .image {
-    width: 75%;
+    height: 200px;
+    width: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+button {
+    margin: 15px;
+    height: 35px;
+    width: 35px;
+    border-radius: 8px;
+    border: none;
+    background: #2222ff;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+button:hover {
+    background: white;
+    color: #2222ff;
 }

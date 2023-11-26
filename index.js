@@ -1,20 +1,19 @@
 const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 
-const picture1 = document.getElementById("picture-1");
+const picture = document.getElementById("picture");
 
-let pictureCount = 1;
+//Change to have max number of photos.
+const pictureTotal = 2;
 
-if (pictureCount = 1) {
-//    picture1.removeClass('hidden');
-}
-else {
-//    picture1.addClass('hidden');
-}
+let pictureCount = 0;
 
 function checkCount() {
-    if (pictureCount < 1) {
-        pictureCount = 1;
+    if (pictureCount < 0) {
+        pictureCount = 0;
+    }
+    else if (pictureCount > pictureTotal - 1) {
+        pictureCount = 0;    
     }
 }
 
@@ -23,6 +22,8 @@ nextBtn.addEventListener('click', () => {
 
     checkCount();
 
+    picture.src = `./assets/images/carousel/picture${pictureCount}.jpg`;
+
     console.log(pictureCount);
 });
 
@@ -30,6 +31,8 @@ prevBtn.addEventListener('click', () => {
     pictureCount--;
 
     checkCount();
+
+    picture.src = `./assets/images/carousel/picture${pictureCount}.jpg`;
 
     console.log(pictureCount);  
 });
